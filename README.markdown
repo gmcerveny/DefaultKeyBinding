@@ -11,3 +11,8 @@ Info on keybinds at ADC's [Text Defaults Bindings](http://developer.apple.com/li
 This maybe interesting to add as well [Emacs Opt Keybindings](http://www.hcs.harvard.edu/~jrus/Site/KeyBindings/Emacs%20Opt%20Bindings.dict ) with writeup at [Cocoa Text System](http://www.hcs.harvard.edu/~jrus/Site/Cocoa%20Text%20System.html).
 
 Key bindings raise events on NSResponder, and most interesting are the [Action Nessages](http://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSResponder_Class/Reference/Reference.html#//apple_ref/doc/uid/20000015-6949). Note: there don't seem to exist messages for things like sentences.  
+
+---
+
+[Text System Defaults](http://developer.apple.com/library/mac/documentation/cocoa/conceptual/eventoverview/TextDefaultsBindings/TextDefaultsBindings.html#//apple_ref/doc/uid/20000468-610084) must be added with through the OS X user defaults system. Running SetDefaults.sh captures these settings. 
+
