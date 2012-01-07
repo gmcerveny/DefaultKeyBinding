@@ -4,7 +4,9 @@ Info on keybinds at ADC's [Text Defaults Bindings](http://developer.apple.com/li
 
 > These notes do apply to Cocoa applications such as Xcode, Interface Builder, TextEdit, and others which use the text system.
 
+
 > The standard key bindings are specified in /System/Library/Frameworks/AppKit.framework/Resources/StandardKeyBinding.dict. These standard bindings include a large number of Emacs-compatible control key bindings, all the various arrow key bindings, bindings for making field editors and some keyboard UI work, and backstop bindings for many function keys.
+
 
 > With these bindings it would be necessary to type “Control-Q, Option-f” in order to type a florin character instead of moving forward a word.
 
