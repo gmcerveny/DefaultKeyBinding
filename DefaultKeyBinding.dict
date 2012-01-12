@@ -14,12 +14,11 @@
     
     /* Escape should really be complete: */
     "\033" = "complete:";  /* Escape */
-}
 
 /*  IMPROMPTU KEY-BINDINGS */
-{
+
 	/*evaluate to outer expression*/
-	"^ "        = "IMP_evalToOuterExpr:";
+    "^ "        = "IMP_evalToOuterExpr:";
 	/*next buffer with up arrow*/
 	"^\UF700"   = "IMP_nextBuffer:";
 	/*previous buffer with down arrow*/
