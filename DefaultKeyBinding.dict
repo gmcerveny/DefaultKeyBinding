@@ -16,3 +16,80 @@
     "\033" = "complete:";  /* Escape */
 }
 
+/*  IMPROMPTU KEY-BINDINGS */
+{
+	/*evaluate to outer expression*/
+	"^ "        = "IMP_evalToOuterExpr:";
+	/*next buffer with up arrow*/
+	"^\UF700"   = "IMP_nextBuffer:";
+	/*previous buffer with down arrow*/
+	"^\UF701"   =  "IMP_previousBuffer:";
+	/*format code*/
+	"^f"        = "IMP_formatCode:";
+	/*select paragraph - same as IMP_selectExpr:*/
+	"^s"        = "selectParagraph:";	
+	
+	"^k"        = "deleteToEndOfLine:";
+	
+	/* Duplicate Line */ 
+	"~\UF700"   =  ("moveToBeginningOfLine:",
+                    "moveToEndOfLineAndModifySelection:",
+	                "cut:",
+	                "paste:",
+	                "IMP_normalNewLine:",
+	                "paste:"
+	               );
+		
+   /* Control-x Copy Dictionary */
+	"^c"    = {/*copy line*/
+			  "l" = ("moveToBeginningOfLine:",
+                     "moveToEndOfLineAndModifySelection:",		
+			         "copy:",
+			  );
+			  /*copy expression*/
+			  "e" = ("IMP_selectExpr:",
+			         "copy:"
+			  );
+			  /*copy outer expression*/
+			  "o" = ("IMP_selectToOuterExpr:",
+			         "copy:"
+			  );			  
+	};
+
+	// Impromptu Mark Points [0-9]
+	// cntl+alt=set  cntl=eval  alt=move
+	"^0"      = "IMP_evalIMPMarkZero:";
+	"^~0"     = "IMP_setIMPMarkZero:";
+	"~0"      = "IMP_moveToIMPMarkZero:";	
+	"^1"      = "IMP_evalIMPMarkOne:";
+	"^~1"     = "IMP_setIMPMarkOne:";
+	"~1"      = "IMP_moveToIMPMarkOne:";	
+	"^2"      = "IMP_evalIMPMarkTwo:";
+	"^~2"     = "IMP_setIMPMarkTwo:";
+	"~2"      = "IMP_moveToIMPMarkTwo:";	
+	"^3"      = "IMP_evalIMPMarkThree:";
+	"^~3"     = "IMP_setIMPMarkThree:";
+	"~3"      = "IMP_moveToIMPMarkThree:";
+	"^4"      = "IMP_evalIMPMarkFour:";
+	"^~4"     = "IMP_setIMPMarkFour:";
+	"~4"      = "IMP_moveToIMPMarkFour:";	
+	"^5"      = "IMP_evalIMPMarkFive:";
+	"^~5"     = "IMP_setIMPMarkFive:";
+	"~5"      = "IMP_moveToIMPMarkFive:";	
+	"^6"      = "IMP_evalIMPMarkSix:";
+	"^~6"     = "IMP_setIMPMarkSix:";
+	"~6"      = "IMP_moveToIMPMarkSix:";	
+	"^7"      = "IMP_evalIMPMarkSeven:";
+	"^~7"     = "IMP_setIMPMarkSeven:";
+	"~7"      = "IMP_moveToIMPMarkSeven:";
+	"^8"      = "IMP_evalIMPMarkEight:";
+	"^~8"     = "IMP_setIMPMarkEight:";
+	"~8"      = "IMP_moveToIMPMarkEight:";	
+	"^9"      = "IMP_evalIMPMarkNine:";
+	"^~9"     = "IMP_setIMPMarkNine:";
+	"~9"      = "IMP_moveToIMPMarkNine:";
+	
+    "^i" = ("insertText:", "Welcome To Impromptu!", "IMP_normalNewLine:");
+
+}
+
